@@ -9,7 +9,7 @@ import {ToastController} from '../../components/modal/ToastModal';
 import {userRegisterApi} from '../../api/user';
 
 export default function Register({navigation}) {
-  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]*\.com$/;
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   const {top} = useSafeAreaInsets();
   const [info, setInfo] = useState({
